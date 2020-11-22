@@ -1,0 +1,61 @@
+/* Add your own styles */
+h1{
+    padding-bottom: 80px;
+    background-color:darkblue ;
+    color:white;
+    text-align: center;
+}
+body{
+    background-color: lavenderblush;
+  }
+
+
+main{
+    text-align: center;
+    padding-left:10em;
+}
+  input{
+    height: 2.5em;
+    width: 40em;
+    border-radius: 5px;
+  }
+   button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  button2 {
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  
+  table{
+    border-collapse: collapse;
+    width:100%;
+}
+table td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+Table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:darkblue;
+    color: white;
+  }
