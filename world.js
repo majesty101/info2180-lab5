@@ -1,11 +1,12 @@
 window.onload = function(){
-    var loadbtn = document.getElementById('lookup');
-    var   output = document.getElementById("result");
-    var lookupcities = document.getElementById('lookupcities');
-    var  aaa = document.getElementById("country").value;
+    
     var httprequest = new XMLHttpRequest();
-     var output = document.getElementById("result");
+    
+    
+  
 
+    var loadbtn = document.getElementById('lookup');
+    var  aaa = document.getElementById("country").value;
 
     loadbtn.addEventListener('click', function(e){
         e.preventDefault();
@@ -23,9 +24,14 @@ window.onload = function(){
     httprequest.send();
     });
 
+    
+    var lookupcities = document.getElementById('lookupcities');
+
+    var output = document.getElementById("result");
     lookupcities.addEventListener('click', function(e){
         e.preventDefault();
         var url = "http://localhost/info2180-lab5/world.php?country=Jamaica&context=cities";
+        var output = document.getElementById("result");
         httprequest.open("GET", url, true);
         httprequest.onreadystatechange = function() {
             console.log("ha");
