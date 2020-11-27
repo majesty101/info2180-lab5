@@ -12,7 +12,7 @@ window.onload = function(){
         e.preventDefault();
         output = document.getElementById("result");
         var url = "http://localhost/info2180-lab5/world.php?country=Jamaica";
-        httprequest.open("GET", url+ aaa, true);
+        httprequest.open("GET", url, true);
         httprequest.onreadystatechange = function() {
             console.log("haiiii");
             if(httprequest.readyState == XMLHttpRequest.DONE && httprequest.status == 200){
