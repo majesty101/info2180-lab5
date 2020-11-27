@@ -10,11 +10,7 @@ $context = $_GET["context"];
 if($context != "cities"){
 $stmt = $conn->query("SELECT * FROM countries WHERE name LIKE '%$country%'");
 }else{
-<<<<<<< HEAD
-$stmt= $conn->query("SELECT cities.district, cities.name, cities.population FROM countries INNER JOIN cities ON 
-=======
-$stmt= $conn->query("SELECT cities.name, cities.district, cities.population FROM countries INNER JOIN cities ON 
->>>>>>> 0f3e51f28e4e9db2f44ed75e6318dd74a9de289a
+$stmt= $conn->query("SELECT cities.district, cities.population, cities.name FROM countries INNER JOIN cities ON 
 countries.code = cities.country_code WHERE countries.name LIKE '%$country%'");
 }
 
@@ -24,7 +20,7 @@ header('Access-Control-Allow-Origin: *');
 
 <table>
 <?php if ($context != "cities"){
- echo"<tr>
+ print"<tr>
 
   <th>Name</th>
   <th>Continent</th>
@@ -40,7 +36,7 @@ header('Access-Control-Allow-Origin: *');
    </table>
 <table>
    <?php if ($context == "cities"){
- echo"<tr>
+ print"<tr>
 
   <th>Name</th>
   <th>District</th>
